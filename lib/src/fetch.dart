@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
+import 'package:gotrue/src/fetch_options.dart';
+import 'package:gotrue/src/gotrue_error.dart';
+import 'package:gotrue/src/gotrue_response.dart';
 
-import 'fetch_options.dart';
-import 'gotrue_error.dart';
-import 'gotrue_response.dart';
+import 'package:http/http.dart' as http;
 
 final Fetch fetch = Fetch();
 
