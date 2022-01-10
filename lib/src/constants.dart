@@ -10,7 +10,14 @@ class Constants {
   static const String defaultStorageKey = 'supabase.auth.token';
 }
 
-enum AuthChangeEvent { signedIn, signedOut, userUpdated, passwordRecovery }
+enum AuthChangeEvent {
+  signedIn,
+  signedOut,
+  userUpdated,
+  passwordRecovery,
+  tokenRefreshed,
+  userDeleted
+}
 
 extension AuthChangeEventName on AuthChangeEvent {
   String name() {
